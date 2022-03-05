@@ -315,11 +315,150 @@ footer{
     padding: 1rem
 }
 
+#mapa iframe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.iframe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
 .mapa iframe{
+    justify-content: center;
+    margin: 5px 5px 40px 490px;
     border-radius: 50%;/*para que se ponga redondo*/
     border: 7px solid black; 
      
 }
 /*contacto*/
+
+body{
+    margin: 0;
+    background-size: 100%;
+    background-image: url(../img/fondo.jpg);
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+form{  
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;   
+    border-radius: 7px;
+    
+}
+ 
+h1{
+    color: #b77feb;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+h2{
+    text-shadow: 2px 2px 2px rgb(117,41,149);
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+p{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(7, 0, 10);
+}
+
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+textarea{
+    max-width: 500px;
+}
+
+#button{
+    background: rgb(117,41,149);
+    color: white;
+    padding: 20px;
+}
+
+#button:hover{
+    cursor: pointer;
+}
+
+.info-contact p{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/*TIPS*/
+
+.tips{
+    width:48%;
+    background: linear-gradient(#74959a5e, #af98b4a1);
+    box-shadow: 3px 3px 7px rgb(236, 229, 229);
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    margin: 40px auto;
+    align-items: center;
+    padding: 30px ;
+    
+}
+
+.tips p{
+    padding: 30px 30px 20px 30px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    align-content: flex-end;     
+}
+
+
+
+.tips h1 {
+    color: #b77feb;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-align:center;
+    align-items:center;  
+}
+
+.video{
+    width:48%;
+    background: linear-gradient(#74959a5e, #af98b4a1);
+    box-shadow: 3px 3px 7px rgb(236, 229, 229);
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    margin: 40px auto;
+    align-items: center;
+    padding: 30px ;  
+     
+}
+.video h1 {
+    color: #b77feb;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    padding: 20px;
+    text-align:center;
+    align-items:center;  
+}
+
+
+
+
+
 
 

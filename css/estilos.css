@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --dark-color: #191919;
+    --white-color: #FFFFFF;
+    --purple-color: rgb(117,41,149);
+    --blue-color: #00b2b1;
+    --gray-color: #828282;
+    --ligh-color: #f3fef3;
+}
+
+h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+    color: var(--purple-color);
+}
+
+p{
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+/*Estilos Home*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    max-width: 270px;
+    width: 100%;
+}
+
+.b-azul{
+    background: linear-gradient(#00b2b2, #016e6e);
+    border-radius: 5px;
+    border-color:var(--blue-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.b-azul:hover{
+    background: linear-gradient(#016e6e, #00b2b2);
+    transition: all 1s ease 1s;
+
+}
+
+.b-morado{
+    background-color: var(--white-color);
+    border-radius: 5px;
+    border-color:var(--purple-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color:var(--purple-color)
+}
+
+.b-morado:hover{
+    color:var(--white-color);
+    background: var(--purple-color);
+
+}
+
+.promocion h1{
+    color:var(--purple-color);
+    font-size: 28px;
+    text-shadow: 2px 2px 2px white;
+
+}
+
+nav{
+    display: flex;
+    background-color: var(--purple-color);
+}
+
+/*para ajustar la barra de navegación o menú*/
+.item{
+    padding: 1rem;
+    color:var(--white-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--purple-color);
+}
+
+.item:hover{
+    color: rgba(255,255,255,0.4);
+    transition: transform  
+}
+
+#agenda{
+    display: flex;
+}
+
+.cita{
+    flex-basis:70%;
+    background-image: url("../img/fondo.jpg");
+    padding: 2rem;
+}
+
+.cita h1{
+    color: var(--dark-color);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.cita h3{
+    color: var(--dark-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.promocion{
+    flex-basis: 30%;
+}
+
+.promocion h1{
+    color:var(--purple-color);
+    font-size: 28px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.promocion img{
+    border-radius:50% ;
+    border: 7px solid white;
+    inset:0 0 0 3px var(--dark-color);
+}
+
+ /*--------------este es para alinear el titulo se servicios -----------*/
+.tseccion { 
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--dark-color); /*este es para ponerle la sombra al texto*/
+    justify-content: space-between;
+}
+
+/*---------------CONTENEDOR PADRE, EL CUAL VA A SER FLEXIBLE LOS DEMAS-------------*/
+#servicios{ /*el # es de el id */
+    display: flex;
+    justify-content: space-between; /*este es para que se ubiqe de forma horiszontal*/
+}
+
+.servicio{
+    margin: 10px;/*separacion de los elementos*/
+    text-align: center;/*alinear el texto o sus elementos al centro*/
+    padding: 1rem;
+}
+
+.servicio img{ /*para ajustar las imagenes del contenedor*/
+    max-width: 200px;
+    width: 100%;
+}
+
+
+/*------ESTE ES LA SIGUIENTE CAJA DE SEDES ------*/
+
+/*es te es para ponerle fondo a la caja principal*/
+footer{ 
+    background-image: url("../img/fondo.jpg"); /*para llamar el fondo que deseo*/
+}
+
+/*-----este es para establecer lo que se ubia dentro de la caja-----*/
+.box-footer{
+    display: flex;
+    justify-content:space-around; /*-----space-beetwen es para que distancien hacia afuera y space-aron hacia dentro*/
+    padding: 2rem;/*para que se centren n poco mas hacia dentro*/
+    background-color: rgba(117, 41, 149, 0.4); /* el ultimo numero define la transparencia de el color*/
+}
+
+.foot{
+    text-align: center; /*centrar los textos de la caja todos centrados*/
+}
+
+.foot h3{
+    color: var(--white-color);/*el color de la letra de los titulos*/
+    font-weight: 500;
+}
+
+.foot p{
+    color: white; /*el color de la letra de los parrafos*/
+}
+
+.icono{
+    color:var(--white-color);
+    margin-right: 0.3rem; /*es para que el icono tome distancia del texto ingresar hacia la derecha*/
+}
+
+/*--------CAJA DE EQUIPO----*/
+#banner{/*el contenido dentro de bañar sea flexible--*/
+    display: flex;
+}
+
+.intro img{
+    max-width:100%;
+}
+
+#equipo{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.equipo{
+    flex-basis: 30%;
+}
+
+.equipo img{
+    border-radius:50% ;
+    border: 7px solid white;
+    inset:0 0 0 3px var(--dark-color);
+    max-width: 200px;
+    width: 100%;
+}
+
+.equipo{
+    text-align: center;
+}
+
+.equipo p{
+    text-align: center;
+    justify-content: justify;
+}
+.servicio img{
+    max-width: 200px;
+    width: 100%;
+}
+.equipo h1{
+    color:var(--purple-color);
+    font-size: 28px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--w);
+    justify-content: space-between;
+    font-weight: 400;
+}
+.equipo h3{
+    color:var(--purple-color);
+    font-size: 20px;
+    text-shadow: 2px 2px 2px white;
+    font-weight: bolder;
+
+}
+.equipo h4{
+    color: var(--dark-color);
+    font-size: 18px;
+    font-weight: bolder 700;
+    text-shadow: 2px 2px 2px var(--gray-color);
+    justify-content: space-between;
+}
+
+
+/*----- APARTADO DE SERIVICIOS-----*/
+#banner2 img{
+    width: 100%; /*SI mi imagen de banner no se ajusta a lo largo se establece se utiliza el wodth */
+}
+
+/*----CAJA PADRE----*/
+#services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;   
+}
+
+/*---- SUB CAJA HIJA----*/
+#service{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    width: 45%;    
+}
+.service{ 
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    width: 45%;
+}
+
+.text-service h2{
+    color:var(--dark-color)
+} 
+
+.text-service p{
+    color:var(--dark-color);
+    font-size: 18px;
+    font-weight:300;
+}
+
+.imgservice{
+    margin-right: 3rem;
+}
+
+.service{ /*---- SUB CAJA HIJA----*/
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    width: 45%;
+}
+
+/*-------APARTADO DE CONTACTO-----*/
+
+#contacto{
+    padding: 1rem
+}
+
+.mapa iframe{
+    border-radius: 50%;/*para que se ponga redondo*/
+    border: 7px solid black; 
+     
+}
+/*contacto*/
+
+

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --dark-color: #191919;
+    --white-color: #FFFFFF;
+    --purple-color: rgb(117,41,149);
+    --blue-color: #00b2b1;
+    --gray-color: #828282;
+    --ligh-color: #f3fef3;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+}
+
+p{
+    text-decoration: justify;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.login img{
+    align-items: center;
+}
+
+.form-login h1{
+    text-align: center;
+}
+
+ .form-login i{
+     color: var(--purple-color);
+     background-color: var(--white-color);
+     padding: 1rem 0.8rem;
+     border-radius: 100%;
+     border: 4px solid var(--gray-color);
+ }
+
+.form-login{
+    margin-top: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 1px 1px 2px var(--dark-color);
+    background-color: var(--ligh-color);
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;   
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.form-input{
+    border: 3px solid var(--gray-color);
+    padding: 0.5rem;
+    outline: none;
+}
+
+.form-input:focus{
+    border: 3px solid var(--gray-color);
+
+}
+.form-input::placeholder{
+    font-size: 0.8rem;
+}
+
+.btn-azul,.btn-morado{
+    padding: 0.5rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-azul{
+    text-align: center;
+    background-color: var(--blue-color);
+
+}
+
+.btn-morado{
+    background-color: var(--purple-color);
+}
+
+.fomr-olvido{
+    text-align: center;
+    color: var(--blue-color);
+    font-size: 0.9rem;
+}
